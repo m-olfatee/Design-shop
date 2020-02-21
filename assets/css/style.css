@@ -1,0 +1,163 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Karla', ;
+    margin: 0 5%;
+}
+
+
+
+#header {
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo a {
+    text-decoration: none;
+    font-size: 1.5em; 
+    color: #323A45;
+}
+.navigation ul {
+    margin: 0;
+}
+.navigation li {
+    display: inline;
+}
+.navigation li a {
+    text-decoration: none;
+    padding-left: 3vw;
+    color: #323A45;
+
+}
+.logo a:hover , .navigation a:hover {
+    color: #848484;
+}
+
+
+#main img {
+    width: 100%;
+    opacity: 0.5;
+    transition: all 1s;
+}
+.product-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product-data h2{
+    color: #323A45;
+    font-weight: lighter;
+}
+.product-data p {
+    color: #848484;
+}
+.price p {
+    color: #323A45;
+    font-weight: bold;
+
+}
+.grid-form-six {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 2vw;
+}
+.grid-form-three {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 1vw;
+}
+#main img:hover {
+    opacity: 1;
+}
+
+
+
+#footer {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    display: grid;
+    grid-template-columns: 34% repeat(3, 1fr);
+
+}
+#footer h3 {
+    padding-bottom: 5vh;
+    font-size: 1.3em;
+    font-weight: 300;
+    color: #323A45;
+}
+.italic {
+    font-style: italic;
+}
+
+#footer a {
+    font-size: large;
+    text-decoration: none;
+    color: #323A45;
+
+}
+#footer span {
+    font-weight: bold;
+}
+#footer p {
+    font-size: 1.1em;
+    width: 80%;
+    color: #323A45;
+
+}
+.copyright {
+    font-size: 0.8em;
+    color: #848484;
+    font-weight: lighter;
+
+}
+.copyright span {
+    font-size: 3em;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    body {
+      font-size: 13px;
+    }
+    .grid-form-six {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    #footer {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+    #main img {
+        opacity: 1;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    body {
+      font-size: 10px;
+    }
+    .grid-form-six {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+    }
+    .grid-form-three {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+    #footer {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+    #footer h3 {
+        padding-top: 5vh;
+    }
+    #main img {
+        opacity: 1;
+    }
+  }
